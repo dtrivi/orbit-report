@@ -14,14 +14,12 @@ export class Satellite {
     }
 
     shouldShowWarning (): boolean {
-        let warning: boolean;
         let debris = 'space debris';
         if (this.type.toLowerCase() === debris) {
-            warning = true;
+            return true;
         } else {
-            warning = false;
-        }
-        return warning;
+            return false;
+        };
     }
 
 }
